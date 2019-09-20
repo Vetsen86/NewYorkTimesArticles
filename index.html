@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Article Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">New York Times Article Search</h1>
+    </div>
+
+    <div class="container border border-secondary">
+        <h3>Search parameters</h3>
+        <form class="my-5">
+            <div class="form-group">
+              <label for="searchTerm">Search Term:</label>
+              <input type="text" class="form-control" id="searchTerm" placeholder="Enter a search term">
+            </div>
+            <div class="form-group">
+              <label for="numberRecords">Number of Records to Retrieve: </label>
+              <input type="text" class="form-control" id="numberRecords" placeholder="Number">
+            </div>
+            <div class="form-group">
+              <label for="startYear">Start Year (optional): </label>
+                <input type="text" class="form-control" id="startYear">
+            </div>
+            <div class="form-group">
+                <label for="endYear">End Year (optional):</label>
+                <input type="text" class="form-control" id="endYear">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Search</button>
+            <button id="clear" class="btn btn-primary">Clear results</button>
+          </form>
+    </div>
+
+    <div class="container border border-secondary my-5">
+        <h3>Top Articles</h3>
+        <div id="results">
+            
+        </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
